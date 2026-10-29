@@ -1,10 +1,48 @@
 const header = document.getElementById("header");
 const navToggle = document.getElementById("navToggle");
 const mainNav = document.getElementById("mainNav");
+const themeToggle = document.getElementById("themeToggle");
 const navLinks = document.querySelectorAll(".nav__link");
 const sections = document.querySelectorAll("section[id]");
 const contactForm = document.getElementById("contactForm");
 const formMessage = document.getElementById("formMessage");
+
+const THEME_STORAGE_KEY = "coffee-house-theme";
+
+function applyTheme(theme) {
+  const isDark = theme === "dark";
+  if (isDark) {
+    document.documentElement.setAttribute("data-theme", "dark");
+  } else {
+    document.documentElement.removeAttribute("data-theme");
+  }
+  themeToggle?.setAttribute("aria-pressed", isDark ? "true" : "false");
+  themeToggle?.setAttribute(
+    "aria-label",
+    isDark ? "Увімкнути світлу тему" : "Увімкнути темну тему"
+  );
+  try {
+    localStorage.setItem(THEME_STORAGE_KEY, isDark ? "dark" : "light");
+  } catch (_) {}
+}
+
+function initTheme() {
+  let theme = "light";
+  try {
+    const saved = localStorage.getItem(THEME_STORAGE_KEY);
+    if (saved === "dark" || saved === "light") {
+      theme = saved;
+    }
+  } catch (_) {}
+  applyTheme(theme);
+}
+
+initTheme();
+
+themeToggle?.addEventListener("click", () => {
+  const isDark = document.documentElement.getAttribute("data-theme") === "dark";
+  applyTheme(isDark ? "light" : "dark");
+});
 
 function closeMobileNav() {
   mainNav.classList.remove("is-open");
