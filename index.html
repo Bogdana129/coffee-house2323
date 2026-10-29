@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Coffee House — затишна кав'ярня з авторською кавою, свіжою випічкою та теплою атмосферою."
+    />
+    <title>Coffee House — Кав'ярня</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="container header__inner">
+        <a href="#home" class="logo" aria-label="Coffee House — на головну">
+          <span class="logo__icon" aria-hidden="true">☕</span>
+          <span class="logo__text">Coffee House</span>
+        </a>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          type="button"
+          aria-label="Відкрити меню"
+          aria-expanded="false"
+          aria-controls="mainNav"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="nav" id="mainNav" aria-label="Головна навігація">
+          <ul class="nav__list">
+            <li><a href="#home" class="nav__link">Головна</a></li>
+            <li><a href="#about" class="nav__link">Про нас</a></li>
+            <li><a href="#menu" class="nav__link">Меню</a></li>
+            <li><a href="#reviews" class="nav__link">Відгуки</a></li>
+            <li><a href="#contacts" class="nav__link">Контакти</a></li>
+          </ul>
+          <a href="#contacts" class="btn btn--small nav__cta">Забронювати столик</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero__bg" aria-hidden="true"></div>
+        <div class="container hero__content">
+          <p class="hero__eyebrow">З 2018 року в серці міста</p>
+          <h1 class="hero__title">Смак кави, який хочеться зберегти</h1>
+          <p class="hero__text">
+            У Coffee House ми обжарюємо зерна малими партіями, готуємо напої з душею та
+            створюємо простір, де приємно зустрічати ранок і проводити вечір.
+          </p>
+          <div class="hero__actions">
+            <a href="#menu" class="btn">Переглянути меню</a>
+            <a href="#about" class="btn btn--outline">Дізнатися більше</a>
+          </div>
+        </div>
+        <div class="hero__scroll" aria-hidden="true">
+          <span>Прокрутіть вниз</span>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="container features__grid">
+          <article class="feature-card">
+            <span class="feature-card__num">01</span>
+            <h3>Свіжа обжарка</h3>
+            <p>Зерна з Ефіопії, Колумбії та Бразилії — щотижнева доставка від локальних обжарників.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-card__num">02</span>
+            <h3>Домашня випічка</h3>
+            <p>Круасани, чізкейки та сезонні десерти щодня з нашої кухні.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-card__num">03</span>
+            <h3>Затишна атмосфера</h3>
+            <p>М'яке світло, зручні дивани та тиха музика — ідеально для роботи та зустрічей.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="about section" id="about">
+        <div class="container about__grid">
+          <div class="about__media">
+            <img
+              src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80"
+              alt="Бариста готує лате в кав'ярні"
+              width="800"
+              height="1000"
+              loading="lazy"
+            />
+            <img
+              class="about__media-accent"
+              src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=600&q=80"
+              alt="Чашка еспресо на дерев'яному столі"
+              width="600"
+              height="600"
+              loading="lazy"
+            />
+          </div>
+          <div class="about__content">
+            <span class="section__label">Про нас</span>
+            <h2 class="section__title">Місце, де кава стає ритуалом</h2>
+            <p>
+              Coffee House народилася з простої ідеї: подавати чесну, смачну каву в
+              атмосфері, яка нагадує домашній затишок. Наша команда бариста проходить
+              навчання з альтернативних методів заварювання та постійно експериментує з
+              сезонним меню.
+            </p>
+            <p>
+              Ми піклуємося про сталий розвиток: використовуємо багаторазові стакани,
+              співпрацюємо з локальними фермерами та підтримуємо культурні події в
+              нашому районі.
+            </p>
+            <ul class="about__stats">
+              <li>
+                <strong>12+</strong>
+                <span>сортів кави</span>
+              </li>
+              <li>
+                <strong>4</strong>
+                <span>роки на ринку</span>
+              </li>
+              <li>
+                <strong>8</strong>
+                <span>бариста в команді</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu section section--alt" id="menu">
+        <div class="container">
+          <div class="section__header">
+            <span class="section__label">Меню</span>
+            <h2 class="section__title">Оберіть свій улюблений напій</h2>
+            <p class="section__subtitle">
+              Усі ціни в гривнях. Можна замовити на винос або насолодитися у залі.
+            </p>
+          </div>
+
+          <div class="menu-tabs" role="tablist" aria-label="Категорії меню">
+            <button
+              class="menu-tab is-active"
+              role="tab"
+              aria-selected="true"
+              data-tab="coffee"
+              id="tab-coffee"
+              aria-controls="panel-coffee"
+            >
+              Кава
+            </button>
+            <button
+              class="menu-tab"
+              role="tab"
+              aria-selected="false"
+              data-tab="alt"
+              id="tab-alt"
+              aria-controls="panel-alt"
+            >
+              Альтернатива
+            </button>
+            <button
+              class="menu-tab"
+              role="tab"
+              aria-selected="false"
+              data-tab="desserts"
+              id="tab-desserts"
+              aria-controls="panel-desserts"
+            >
+              Десерти
+            </button>
+          </div>
+
+          <div
+            class="menu-panel is-active"
+            id="panel-coffee"
+            role="tabpanel"
+            aria-labelledby="tab-coffee"
+          >
+            <div class="menu-grid">
+              <article class="menu-card">
+                <div class="menu-card__image">
+                  <img
+                    src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?w=600&q=80"
+                    alt="Еспресо"
+                    width="600"
+                    height="400"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="menu-card__body">
+                  <div class="menu-card__head">
+                    <h3>Еспресо</h3>
+                    <span class="menu-card__price">65 ₴</span>
+                  </div>
+                  <p>Класичний міцний шот зі збалансованою кислотністю.</p>
+                </div>
+              </article>
+              <article class="menu-card">
+                <div class="menu-card__image">
+                  <img
+                    src="https://images.unsplash.com/photo-1561882468-9110e6441b45?w=600&q=80"
+                    alt="Капучино"
+                    width="600"
+                    height="400"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="menu-card__body">
+                  <div class="menu-card__head">
+                    <h3>Капучино</h3>
+                    <span class="menu-card__price">85 ₴</span>
+                  </div>
+                  <p>Еспресо з молочною пінкою та ніжною кремовою текстурою.</p>
+                </div>
+              </article>
+              <article class="menu-card">
+                <div class="menu-card__image">
+                  <img
+                    src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&q=80"
+                    alt="Лате"
+                    width="600"
+                    height="400"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="menu-card__body">
+                  <div class="menu-card__head">
+                    <h3>Лате</h3>
+                    <span class="menu-card__price">90 ₴</span>
+                  </div>
+                  <p>М'який молочний напій з подвійним еспресо.</p>
+                </div>
+              </article>
+              <article class="menu-card">
+                <div class="menu-card__image">
+                  <img
+                    src="https://images.unsplash.com/photo-1517487881594-2787fef5ebf7?w=600&q=80"
+                    alt="Флет вайт"
+                    width="600"
+                    height="400"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="menu-card__body">
+                  <div class="menu-card__head">
+                    <h3>Флет вайт</h3>
+                    <span class="menu-card__price">95 ₴</span>
+                  </div>
+                  <p>Рістретто з мікропінкою — насичений і бархатистий смак.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div
+            class="menu-panel"
+            id="panel-alt"
+            role="tabpanel"
+            aria-labelledby="tab-alt"
+            hidden
+          >
+            <div class="menu-grid">
+              <article class="menu-card menu-card--compact">
+                <div class="menu-card__body">
+                  <div class="menu-card__head">
+                    <h3>V60</h3>
+                    <span class="menu-card__price">110 ₴</span>
+                  </div>
+                  <p>Фільтр-кава з яскравими фруктовими нотами.</p>
+                </div>
+              </article>
+              <article class="menu-card menu-card--compact">
+                <div class="menu-card__body">
+                  <div class="menu-card__head">
+                    <h3>Аеропрес</h3>
+                    <span class="menu-card__price">105 ₴</span>
+                  </div>
+                  <p>Чистий смак із легкою тілесністю.</p>
+                </div>
+              </article>
+              <article class="menu-card menu-card--compact">
+                <div class="menu-card__body">
+                  <div class="menu-card__head">
+                    <h3>Кемекс</h3>
+                    <span class="menu-card__price">115 ₴</span>
+                  </div>
+                  <p>Прозорий настій з карамельним післясмаком.</p>
+                </div>
+              </article>
+              <article class="menu-card menu-card--compact">
+                <div class="menu-card__body">
+                  <div class="menu-card__head">
+                    <h3>Раф ванільний</h3>
+                    <span class="menu-card__price">120 ₴</span>
+                  </div>
+                  <p>Збиті вершки з еспресо та ваніллю.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div
+            class="menu-panel"
+            id="panel-desserts"
+            role="tabpanel"
+            aria-labelledby="tab-desserts"
+            hidden
+          >
+            <div class="menu-grid">
+              <article class="menu-card">
+                <div class="menu-card__image">
+                  <img
+                    src="https://images.unsplash.com/photo-1558961363-fa8cfc64a9ef?w=600&q=80"
+                    alt="Круасан"
+                    width="600"
+                    height="400"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="menu-card__body">
+                  <div class="menu-card__head">
+                    <h3>Круасан масляний</h3>
+                    <span class="menu-card__price">75 ₴</span>
+                  </div>
+                  <p>Свіжий, з хрусткою скоринкою.</p>
+                </div>
+              </article>
+              <article class="menu-card">
+                <div class="menu-card__image">
+                  <img
+                    src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600&q=80"
+                    alt="Чізкейк"
+                    width="600"
+                    height="400"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="menu-card__body">
+                  <div class="menu-card__head">
+                    <h3>Чізкейк Нью-Йорк</h3>
+                    <span class="menu-card__price">95 ₴</span>
+                  </div>
+                  <p>Класичний, з ягідним соусом.</p>
+                </div>
+              </article>
+              <article class="menu-card">
+                <div class="menu-card__image">
+                  <img
+                    src="https://images.unsplash.com/photo-1488477181941-5d59b1c755cf?w=600&q=80"
+                    alt="Тірамісу"
+                    width="600"
+                    height="400"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="menu-card__body">
+                  <div class="menu-card__head">
+                    <h3>Тірамісу</h3>
+                    <span class="menu-card__price">110 ₴</span>
+                  </div>
+                  <p>Ніжний десерт з маскарпоне та еспресо.</p>
+                </div>
+              </article>
+              <article class="menu-card">
+                <div class="menu-card__image">
+                  <img
+                    src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=600&q=80"
+                    alt="Брауні"
+                    width="600"
+                    height="400"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="menu-card__body">
+                  <div class="menu-card__head">
+                    <h3>Шоколадний брауні</h3>
+                    <span class="menu-card__price">85 ₴</span>
+                  </div>
+                  <p>Щільний, з горіхами та какао.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery section">
+        <div class="container">
+          <div class="section__header section__header--center">
+            <span class="section__label">Атмосфера</span>
+            <h2 class="section__title">Моменти з Coffee House</h2>
+          </div>
+          <div class="gallery__grid">
+            <img
+              src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=800&q=80"
+              alt="Зерна кави"
+              loading="lazy"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&q=80"
+              alt="Лате-арт"
+              loading="lazy"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&q=80"
+              alt="Інтер'єр кав'ярні"
+              loading="lazy"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=800&q=80"
+              alt="Заварювання кави"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews section section--alt" id="reviews">
+        <div class="container">
+          <div class="section__header section__header--center">
+            <span class="section__label">Відгуки клієнтів</span>
+            <h2 class="section__title">Що кажуть наші гості</h2>
+            <p class="section__subtitle">
+              Ваша думка для нас важлива — дякуємо всім, хто ділиться враженнями від Coffee House.
+            </p>
+          </div>
+
+          <div class="reviews__grid" id="reviewsList">
+            <article class="review-card">
+              <div class="review-card__top">
+                <div class="review-card__avatar" aria-hidden="true">ОК</div>
+                <div>
+                  <h3 class="review-card__name">Олена Коваленко</h3>
+                  <div class="stars" role="img" aria-label="Оцінка: 5 з 5 зірок">
+                    <span class="stars__item is-filled" aria-hidden="true">★</span>
+                    <span class="stars__item is-filled" aria-hidden="true">★</span>
+                    <span class="stars__item is-filled" aria-hidden="true">★</span>
+                    <span class="stars__item is-filled" aria-hidden="true">★</span>
+                    <span class="stars__item is-filled" aria-hidden="true">★</span>
+                  </div>
+                </div>
+              </div>
+              <blockquote class="review-card__text">
+                «Найкращий капучино в районі! Затишно, привітний персонал і завжди свіжа випічка.
+                Сюди приходжу працювати з ноутбуком — Wi‑Fi стабільний, музика не заважає.»
+              </blockquote>
+            </article>
+
+            <article class="review-card">
+              <div class="review-card__top">
+                <div class="review-card__avatar" aria-hidden="true">АМ</div>
+                <div>
+                  <h3 class="review-card__name">Андрій Мельник</h3>
+                  <div class="stars" role="img" aria-label="Оцінка: 5 з 5 зірок">
+                    <span class="stars__item is-filled" aria-hidden="true">★</span>
+                    <span class="stars__item is-filled" aria-hidden="true">★</span>
+                    <span class="stars__item is-filled" aria-hidden="true">★</span>
+                    <span class="stars__item is-filled" aria-hidden="true">★</span>
+                    <span class="stars__item is-filled" aria-hidden="true">★</span>
+                  </div>
+                </div>
+              </div>
+              <blockquote class="review-card__text">
+                «Спробував V60 — чистий смак, бариста пояснив походження зерна. Чізкейк теж на
+                висоті. Рекомендую всім, хто цінує якісну альтернативну каву.»
+              </blockquote>
+            </article>
+
+            <article class="review-card">
+              <div class="review-card__top">
+                <div class="review-card__avatar" aria-hidden="true">ІС</div>
+                <div>
+                  <h3 class="review-card__name">Ірина Савченко</h3>
+                  <div class="stars" role="img" aria-label="Оцінка: 4 з 5 зірок">
+                    <span class="stars__item is-filled" aria-hidden="true">★</span>
+                    <span class="stars__item is-filled" aria-hidden="true">★</span>
+                    <span class="stars__item is-filled" aria-hidden="true">★</span>
+                    <span class="stars__item is-filled" aria-hidden="true">★</span>
+                    <span class="stars__item" aria-hidden="true">★</span>
+                  </div>
+                </div>
+              </div>
+              <blockquote class="review-card__text">
+                «Чудове місце для зустрічей з друзями. Лате з лате-артом — як на картинці, а
+                інтер'єр дуже теплий. Єдине — у вихідні буває людно, краще приходити раніше.»
+              </blockquote>
+            </article>
+          </div>
+
+          <div class="review-form-wrap">
+            <form class="review-form" id="reviewForm" novalidate>
+              <h3>Залишити відгук</h3>
+              <p class="review-form__hint">Розкажіть про свій візит — відгук з’явиться на сторінці одразу після надсилання.</p>
+              <div class="review-form__fields">
+                <label class="field">
+                  <span>Ім'я</span>
+                  <input
+                    type="text"
+                    name="name"
+                    required
+                    autocomplete="name"
+                    placeholder="Як до вас звертатися"
+                  />
+                </label>
+                <div class="field">
+                  <span id="ratingLabel">Ваша оцінка</span>
+                  <div
+                    class="star-rating"
+                    id="starRating"
+                    role="radiogroup"
+                    aria-labelledby="ratingLabel"
+                    tabindex="0"
+                  >
+                    <button type="button" class="star-rating__btn" data-value="1" aria-label="1 зірка">
+                      ★
+                    </button>
+                    <button type="button" class="star-rating__btn" data-value="2" aria-label="2 зірки">
+                      ★
+                    </button>
+                    <button type="button" class="star-rating__btn" data-value="3" aria-label="3 зірки">
+                      ★
+                    </button>
+                    <button type="button" class="star-rating__btn" data-value="4" aria-label="4 зірки">
+                      ★
+                    </button>
+                    <button type="button" class="star-rating__btn" data-value="5" aria-label="5 зірок">
+                      ★
+                    </button>
+                  </div>
+                  <input type="hidden" name="rating" id="reviewRating" value="" />
+                </div>
+                <label class="field field--full">
+                  <span>Відгук</span>
+                  <textarea
+                    name="text"
+                    rows="4"
+                    required
+                    placeholder="Що вам сподобалось у Coffee House?"
+                  ></textarea>
+                </label>
+              </div>
+              <button type="submit" class="btn">Опублікувати відгук</button>
+              <p class="form-message" id="reviewFormMessage" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="contacts section" id="contacts">
+        <div class="container contacts__grid">
+          <div class="contacts__info">
+            <span class="section__label">Контакти</span>
+            <h2 class="section__title">Завітайте до нас</h2>
+            <ul class="contacts__list">
+              <li>
+                <span class="contacts__icon" aria-hidden="true">📍</span>
+                <div>
+                  <strong>Адреса</strong>
+                  <p>вул. Хрещатик, 22, Київ, 01001</p>
+                </div>
+              </li>
+              <li>
+                <span class="contacts__icon" aria-hidden="true">📞</span>
+                <div>
+                  <strong>Телефон</strong>
+                  <p><a href="tel:+380441234567">+38 (044) 123-45-67</a></p>
+                </div>
+              </li>
+              <li>
+                <span class="contacts__icon" aria-hidden="true">✉️</span>
+                <div>
+                  <strong>Email</strong>
+                  <p><a href="mailto:hello@coffeehouse.ua">hello@coffeehouse.ua</a></p>
+                </div>
+              </li>
+              <li>
+                <span class="contacts__icon" aria-hidden="true">🕐</span>
+                <div>
+                  <strong>Графік</strong>
+                  <p>Пн–Пт: 8:00 – 21:00<br />Сб–Нд: 9:00 – 22:00</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <form class="contact-form" id="contactForm" novalidate>
+            <h3>Забронювати столик</h3>
+            <p class="contact-form__hint">Залиште заявку — ми передзвонимо протягом години.</p>
+            <label class="field">
+              <span>Ім'я</span>
+              <input type="text" name="name" required autocomplete="name" placeholder="Ваше ім'я" />
+            </label>
+            <label class="field">
+              <span>Телефон</span>
+              <input
+                type="tel"
+                name="phone"
+                required
+                autocomplete="tel"
+                placeholder="+38 (0__) ___ __ __"
+              />
+            </label>
+            <label class="field">
+              <span>Дата та час</span>
+              <input type="datetime-local" name="datetime" required />
+            </label>
+            <label class="field">
+              <span>Коментар</span>
+              <textarea name="message" rows="3" placeholder="Кількість гостей, побажання…"></textarea>
+            </label>
+            <button type="submit" class="btn btn--full">Надіслати заявку</button>
+            <p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__brand">
+          <span class="logo__text">Coffee House</span>
+          <p>Кава, що об'єднує. Щодня з любов'ю.</p>
+        </div>
+        <nav class="footer__nav" aria-label="Футер">
+          <a href="#home">Головна</a>
+          <a href="#about">Про нас</a>
+          <a href="#menu">Меню</a>
+          <a href="#reviews">Відгуки</a>
+          <a href="#contacts">Контакти</a>
+        </nav>
+        <p class="footer__copy">© 2026 Coffee House. Усі права захищені.</p>
+      </div>
+    </footer>
+
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>
